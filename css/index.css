@@ -152,6 +152,7 @@ h6 {
 }
 p {
   font-size: 1.5rem;
+  line-height: 1.25;
 }
 header {
   font-size: 1.5rem;
@@ -227,7 +228,6 @@ header a {
 }
 .middle-content {
   display: flex;
-  justify-content: space-evenly;
 }
 .middle-content h3,
 .middle-content h2 {
@@ -239,6 +239,8 @@ header a {
 .middle-content div {
   margin: 20px;
   width: 48.5%;
+  background: #ffdce0;
+  border-radius: 5px;
 }
 @media (max-width: 500px) {
   .middle-content {
@@ -254,6 +256,8 @@ header a {
 .bottom-content div {
   margin: 20px;
   width: 48.5%;
+  background: #ffdce0;
+  border-radius: 5px;
 }
 .bottom-content h3 {
   font-size: 2.5rem;
@@ -266,7 +270,7 @@ header a {
   text-decoration: none;
   font-size: 1.5rem;
   margin: 10px 5px;
-  color: #1F6545;
+  color: #969CD1;
 }
 @media (max-width: 500px) {
   .bottom-content {
