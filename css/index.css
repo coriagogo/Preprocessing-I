@@ -157,9 +157,24 @@ header {
   font-size: 1.5rem;
   margin: 20px 0;
 }
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
 header a {
   text-decoration: none;
   color: #1F6545;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  header a {
+    border-bottom: 1px solid #1F6545;
+    text-align: center;
+    padding: 20px 0;
+  }
 }
 .name-container {
   display: flex;
@@ -225,6 +240,14 @@ header a {
   margin: 20px;
   width: 48.5%;
 }
+@media (max-width: 500px) {
+  .middle-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+}
 .bottom-content {
   display: flex;
 }
@@ -244,6 +267,14 @@ header a {
   font-size: 1.5rem;
   margin: 10px 5px;
   color: #1F6545;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
 }
 footer {
   height: relative;
