@@ -1,1 +1,303 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  max-width: 1000px;
+  margin: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Kavivanar', cursive;
+}
+p {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+header {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+header a {
+  text-decoration: none;
+  color: #1F6545;
+}
+@media (max-width: 500px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  header a {
+    border-bottom: 1px solid #1F6545;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+.name-container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  background: #AABCE2;
+  border-radius: 5px;
+  padding: 20px;
+}
+.name-container img {
+  max-width: 460px;
+  max-height: 460px;
+  border-radius: 5px;
+}
+.name-container h1 {
+  font-size: 4rem;
+}
+.name-container div {
+  width: 48.5%;
+}
+.name-container .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name-container .name-btn {
+  width: 200px;
+  height: 50px;
+  font-size: 1.5rem;
+  background: #1F6545;
+  border: 1px solid #E1CBD6;
+  color: #E1CBD6;
+  border-radius: 5px;
+}
+.name-container .name-btn:hover {
+  background: #E1CBD6;
+  color: #1F6545;
+}
+@media (max-width: 500px) {
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .name-container div {
+    width: 100%;
+  }
+  .name-container img {
+    margin-bottom: 20px;
+  }
+  .name-container .name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.middle-content {
+  display: flex;
+}
+.middle-content h3,
+.middle-content h2 {
+  font-size: 2.5rem;
+}
+.middle-content p {
+  margin: 20px 5px;
+}
+.middle-content div {
+  margin: 20px;
+  width: 48.5%;
+  background: #ffdce0;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .middle-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .middle-content div {
+    width: 90%;
+  }
+}
+.bottom-content {
+  display: flex;
+}
+.bottom-content div {
+  margin: 20px;
+  width: 48.5%;
+  background: #ffdce0;
+  border-radius: 5px;
+}
+.bottom-content h3 {
+  font-size: 2.5rem;
+}
+.bottom-content p {
+  margin: 20px 5px;
+}
+.bottom-content div {
+  width: 90%;
+}
+.bottom-content a {
+  display: flex;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 10px 5px;
+  color: #969CD1;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+}
+footer {
+  height: relative;
+  background: #E1CBD6;
+  border-radius: 5px;
+  color: #1F6545;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 2% 0;
+}
